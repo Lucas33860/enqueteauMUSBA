@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="cramptewText" style="cursor: pointer" onclick="openImage()">
+      CRAMPTEW
+    </h1>
+    <img
+      id="cramptewImage"
+      src="images/CRAMPTEW.jpg"
+      alt="CRAMPTEW"
+      style="display: none"
+    />
+
+    <script>
+      function openImage() {
+        var img = document.getElementById("cramptewImage");
+        var src = img.src;
+        var alertContent =
+          "<img src='" +
+          src +
+          "' style='width:20%; height:20%; display: block; margin: 0 auto;'><br><button style='display: block; margin: 10px auto;' onclick='closeAlert()'>Close</button>";
+        var alertBox = document.createElement("div");
+        alertBox.id = "alertBox";
+        alertBox.style.width = "40%";
+        alertBox.style.position = "fixed";
+        alertBox.style.top = "50%";
+        alertBox.style.left = "50%";
+        alertBox.style.transform = "translate(-50%, -50%)";
+        alertBox.style.backgroundColor = "white";
+        alertBox.style.padding = "5px";
+        alertBox.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.5)";
+        alertBox.innerHTML = alertContent;
+        document.body.appendChild(alertBox);
+      }
+
+      function closeAlert() {
+        var alertBox = document.getElementById("alertBox");
+        document.body.removeChild(alertBox);
+      }
+    </script>
+  </body>
+</html>
