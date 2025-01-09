@@ -85,7 +85,7 @@ button.credit {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 55%;
+  width: 50%;
   max-width: 600px;
   height: auto;
   z-index: 10;
