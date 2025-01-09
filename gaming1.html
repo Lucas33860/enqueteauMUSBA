@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="script.js" defer></script>
     <title>Gaming 1</title>
     <link rel="icon" href="images/flavicon.svg" type="image/x-icon" />
     <meta
@@ -34,23 +33,36 @@
         <button class="answer" onclick="location.href='gg.html'">19 cm</button>
         <button
           class="answer"
-          onclick="document.querySelector('.response').innerText='Ce n\'est pas la bonne réponse'"
+          onclick="showResponse('Ce n\'est pas la bonne réponse')"
         >
           20 cm
         </button>
         <button
           class="answer"
-          onclick="document.querySelector('.response').innerText='Ce n\'est pas la bonne réponse'"
+          onclick="showResponse('Ce n\'est pas la bonne réponse')"
         >
           21 cm
         </button>
         <button
           class="answer"
-          onclick="document.querySelector('.response').innerText='Ce n\'est pas la bonne réponse'"
+          onclick="showResponse('Ce n\'est pas la bonne réponse')"
         >
           19.456 cm
         </button>
       </div>
     </section>
+
+    <script>
+      function showResponse(message) {
+        const response = document.querySelector(".response");
+        response.innerText = message;
+        response.style.display = "block"; // Affiche le message
+
+        // Masquer le message après 5 secondes
+        setTimeout(() => {
+          response.style.display = "none";
+        }, 3000);
+      }
+    </script>
   </body>
 </html>
