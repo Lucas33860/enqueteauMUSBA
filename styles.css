@@ -27,7 +27,7 @@ body {
 
 .logo {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
@@ -57,9 +57,9 @@ button.credit {
 }
 
 button.play {
-  top: 65%;
+  top: 50%;
 }
 
 button.credit {
-  top: 80%;
+  top: 65%;
 }
