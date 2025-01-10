@@ -1,44 +1,44 @@
 body {
-    margin: 10%;
-    padding: 0;
-    background-color: #581616;
+  margin: 10%;
+  padding: 0;
+  background-color: #903421;
 }
 
 .containercredits {
-    background-color: #581616;
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    margin: 0;
+  background-color: #903421;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
 }
 
-p{
-    color: white;
-    padding-bottom: 2.5%;
-    text-align: center;
+p {
+  color: white;
+  padding-bottom: 2.5%;
+  text-align: center;
 }
 
-.espace{
-    text-align: center;
-    margin-bottom: 5%;
-    margin-top: 5%;
+.espace {
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 
-.team{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.images{
-display: flex;
-flex-direction: column;
-padding-top: 5%;
-padding-bottom: 5%;
-gap: 25px;
+.images {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  gap: 25px;
 }
 
-.images img{
-    width: 100%;
+.images img {
+  width: 100%;
 }
