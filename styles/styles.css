@@ -1,14 +1,14 @@
 .container {
   background-color: #581616;
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   overflow: hidden;
 }
 
 .image-container {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
 }
