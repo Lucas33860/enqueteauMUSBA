@@ -132,3 +132,47 @@ button.credit {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.square1 {
+  border: 5px solid #fde09c;
+  width: 22vw;
+  height: 68vw;
+  top: 30%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.square2 {
+  border: 5px solid #fde09c;
+  width: 25vw;
+  height: 22.5vw;
+  top: 18%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.square3 {
+  border: 5px solid #fde09c;
+  width: 25vw;
+  height: 40vw;
+  top: 38%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.square4 {
+  border: 5px solid #fde09c;
+  width: 55vw;
+  height: 37vw;
+  top: 63%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  box-sizing: border-box;
+}
