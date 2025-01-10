@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/fonts.css" />
+    <link rel="stylesheet" href="../styles/typo.css" />
+    <link rel="stylesheet" href="../styles/button.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/dialog2.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="script.js" defer></script>
+    <title>Discussion Tableau 2</title>
+    <link rel="icon" href="../images/flavicon.svg" type="image/x-icon" />
+    <meta
+    name="description"
+    content="Participez à une enquête passionnante au Musba pour la Bacchanight 2025"
+    />
+    <meta
+    name="keywords"
+    content="enquête, Musba, mystère, jeu, indices, Bacchanight"
+    />
+</head>
+<body>
+    <section class="containerdialog">
+    <div class="bulle-container">
+    <img class="perso" src="../images/RICHARD_ROBINSON.svg" alt="" />
+    <img class="bulle" src="../images/BulleDroite.svg" alt="Bulle de texte" />
+    <p class="text" id="animatedText">
+Salutations ! 
+Je suis Richard Robinson, archevêque d’Armagh, baron de Rokeby et primat d’Irlande. 
+    </p>
+    </div>
+    </section>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const textElement = document.getElementById("animatedText");
+        const bulleContainer = document.querySelector(".bulle-container");
+        const texts = [
+        "Me voici brillamment représenté dans ce tableau. ",
+        "Mais voilà, un petit hic me perturbe... Je n’ai plus ma classe habituelle !",
+        "Aide-moi à retrouver ce qui me manque dans mon tableau ! Je te fais confiance !",
+        ];
+        let index = 0;
+        let clickCount = 0;
+
+        function typeWriter(newText, callback) {
+        textElement.innerText = ""; // Efface le texte actuel
+        let charIndex = 0;
+
+        function type() {
+            if (charIndex < newText.length) {
+            textElement.innerHTML += newText.charAt(charIndex);
+            charIndex++;
+            setTimeout(type, 20);
+            } else if (callback) {
+            callback(); // Appelle la fonction de rappel après l'animation
+            }
+        }
+        type();
+        }
+
+        bulleContainer.addEventListener("click", function () {
+        if (clickCount === 0) {
+            // Afficher le nouveau texte
+            typeWriter(texts[0]);
+            clickCount++;
+        } else if (clickCount === 1) {
+            // Afficher le deuxième texte
+            typeWriter(texts[1]);
+            clickCount++;
+        } else if (clickCount === 2) {
+            // Afficher le troisième texte
+            typeWriter(texts[2]);
+            clickCount++;
+        } else if (clickCount === 3) {
+            // Rediriger après un clic supplémentaire
+            window.location.href = "jeu1.html";
+        }
+        });
+
+        // Animation initiale
+        const initialText = textElement.innerText;
+        typeWriter(initialText);
+    });
+    </script>
+</body>
+</html>
