@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: "PersoFont";
+  src: url("fonts/AlfaSlabOne-Regular.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "HeadingFont";
-  src: url("../fonts/AlfaSlabOne-Regular.ttf") format("truetype");
+  src: url("../fonts/PoetsenOne-Regular.ttf") format("truetype");
 }
