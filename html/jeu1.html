@@ -21,13 +21,9 @@
     />
   </head>
   <body>
-    <section class="container">
-      <div>
-        <h1 class="question">Combien de doigts</h1>
     <section class="containergame">
         <img
           class="painting1"
-          src="../images/tableau2.jpg"
           src="../images/tableau1_manquant.jpg"
           alt="Tableau 1"
         />
@@ -65,23 +61,5 @@
         <img class="containergame" src="../images/tableau1_manquant.jpg" alt="Tableau 1" />
 >>>>>>> Stashed changes
     </section>
-
-    <script>
-      function showResponse(message) {
-        const response = document.querySelector(".response");
-        response.innerText = message;
-        response.style.display = "block";
-
-        gsap.fromTo(
-          response,
-          { opacity: 0, scale: 0.8 },
-          {
-            opacity: 1,
-            scale: 1,
-            duration: 1,
-          }
-        );
-      }
-    </script>
   </body>
 </html>
