@@ -1,8 +1,45 @@
+/*
+
+FONTS
+
+*/
+
+@font-face {
+  font-family: "ParagraphFont";
+  src: url("fonts/Acme-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "HeadingFont";
+  src: url("fonts/AlfaSlabOne-Regular.ttf") format("truetype");
+}
+
+/*
+
+KEYFRAMES
+
+*/
+@keyframes highlight {
+  0%,
+  100% {
+    box-shadow: 0 0 5px 2px rgba(255, 255, 0, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 10px 5px rgba(255, 255, 0, 1);
+  }
+}
+
+/*
+
+GLOBAL
+
+*/
+
 body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  font-family: Arial, sans-serif;
+  font-family: "ParagraphFont", sans-serif;
 }
 
 .container {
@@ -55,6 +92,7 @@ button.credit {
   justify-content: center;
   align-items: center;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 1);
+  font-family: "HeadingFont", sans-serif;
 }
 
 button.play {
@@ -78,6 +116,7 @@ button.credit {
   font-size: 1.5rem;
   font-size: calc(1rem + 1vw);
   width: 50%;
+  font-family: "ParagraphFont", sans-serif;
 }
 
 .painting1 {
@@ -103,6 +142,7 @@ button.credit {
   width: 100%;
   height: auto;
   z-index: 10;
+  font-family: "ParagraphFont", sans-serif;
 }
 
 .answers button {
@@ -120,6 +160,7 @@ button.credit {
   align-items: center;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 1);
   margin: 20px;
+  font-family: "HeadingFont", sans-serif;
 }
 
 .response {
@@ -133,8 +174,15 @@ button.credit {
   transform: translate(-50%, -50%);
 }
 
+.square1,
+.square2,
+.square3,
+.square4 {
+  animation: highlight 2s infinite;
+}
+
 .square1 {
-  border: 5px solid #fde09c;
+  border: 2px solid #fde09c;
   width: 22vw;
   height: 68vw;
   top: 30%;
@@ -145,7 +193,7 @@ button.credit {
 }
 
 .square2 {
-  border: 5px solid #fde09c;
+  border: 2px solid #fde09c;
   width: 25vw;
   height: 22.5vw;
   top: 18%;
@@ -156,7 +204,7 @@ button.credit {
 }
 
 .square3 {
-  border: 5px solid #fde09c;
+  border: 2px solid #fde09c;
   width: 25vw;
   height: 40vw;
   top: 38%;
@@ -167,7 +215,7 @@ button.credit {
 }
 
 .square4 {
-  border: 5px solid #fde09c;
+  border: 2px solid #fde09c;
   width: 55vw;
   height: 37vw;
   top: 63%;
@@ -175,4 +223,9 @@ button.credit {
   transform: translate(-50%, -50%);
   position: absolute;
   box-sizing: border-box;
+}
+
+.no-highlight {
+  animation: none;
+  box-shadow: none;
 }
