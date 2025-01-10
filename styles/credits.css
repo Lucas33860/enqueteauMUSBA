@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #581616;
+}
+.containercredits {
+  background-color: #581616;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+}
