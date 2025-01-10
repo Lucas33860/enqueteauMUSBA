@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "ParagraphFont";
+  src: url("../fonts/Acme-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "HeadingFont";
+  src: url("../fonts/AlfaSlabOne-Regular.ttf") format("truetype");
+}

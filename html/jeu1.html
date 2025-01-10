@@ -3,14 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../styles/fonts.css" />
+    <link rel="stylesheet" href="../styles/typo.css" />
+    <link rel="stylesheet" href="../styles/button.css" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <title>Gaming 1</title>
-    <link rel="icon" href="images/flavicon.svg" type="image/x-icon" />
+    <link rel="icon" href="../images/flavicon.svg" type="image/x-icon" />
     <meta
       name="description"
-      content="Participez à une enquête passionnante au Musba pour la Bacchanight 2025"
+      content="Premier jeu du Musba pour la Bacchanight 2025"
     />
     <meta
       name="keywords"
@@ -23,7 +26,7 @@
         <h1 class="question">Combien de doigts</h1>
         <img
           class="painting1"
-          src="images/portrait_richard_robinson 1.png"
+          src="../images/portrait_richard_robinson 1.png"
           alt="Tableau 1"
         />
         <img class="fullscreen" src="" alt="" />
@@ -58,9 +61,8 @@
       function showResponse(message) {
         const response = document.querySelector(".response");
         response.innerText = message;
-        response.style.display = "block"; // Rendre visible avant l'animation
+        response.style.display = "block";
 
-        // Animation d'apparition avec tremblement
         gsap.fromTo(
           response,
           { opacity: 0, scale: 0.8 },
