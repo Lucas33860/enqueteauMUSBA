@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../styles/typo.css" />
     <link rel="stylesheet" href="../styles/button.css" />
     <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/explication.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="script.js" defer></script>
     <title>Explication</title>
@@ -24,14 +25,44 @@
   <body>
     <section class="container">
       <div>
-        <h1>Gérant du Musée</h1>
-        <img src="../images/Personnage.png" alt="Perso musée" />
-        <p>
-          Un esprit malicieux a volé et éparpillé les objets des tableaux. Aide
-          nous à les remettre au bon endroit.
-        </p>
-        <button onclick="location.href='dirtableau1.html'">D'accord</button>
+        <section class="container">
+          <div class="bulle-container">
+            <img class="perso" src="../images/Personnage.png" alt="" />
+            <img class="bulle" src="../images/BulleDroite.svg" alt="Bulle de texte" />
+            <p class="text" id="animatedText">
+              Un esprit malicieux a volé et éparpillé les objets des tableaux. Aide
+              nous à les remettre au bon endroit.
+            </p>
+          </div>
+        </section>
+        <button onclick="location.href='dirtableau1.html'" class="">D'accord</button>
       </div>
     </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const textElement = document.getElementById("animatedText");
+
+        function typeWriter(newText, callback) {
+          textElement.innerText = ""; // Efface le texte actuel
+          let charIndex = 0;
+
+          function type() {
+            if (charIndex < newText.length) {
+              textElement.innerHTML += newText.charAt(charIndex);
+              charIndex++;
+              setTimeout(type, 20);
+            } else if (callback) {
+              callback(); // Appelle la fonction de rappel après l'animation
+            }
+          }
+          type();
+        }
+
+        // Animation initiale
+        const initialText = textElement.innerText;
+        typeWriter(initialText);
+      });
+    </script>
   </body>
 </html>
