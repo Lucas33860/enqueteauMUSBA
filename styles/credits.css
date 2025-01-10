@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 5%;
   padding: 0;
   background-color: #581616;
 }
@@ -9,4 +9,22 @@ body {
   width: 100%;
   min-height: 100vh;
   margin: 0;
+}
+
+body img {
+    width: 100%;
+}
+
+.espace{
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.team{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team p{
+    margin-right: 50px;
 }
