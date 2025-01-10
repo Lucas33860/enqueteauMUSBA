@@ -24,13 +24,60 @@
   </head>
   <body>
     <section class="containerdialog"></section>
-    <div>
+    <div class="bulle-container">
       <img class="perso" src="../images/Personnage.png" alt="" />
       <img class="bulle" src="../images/BulleDroite.svg" alt="Bulle de texte" />
-      <p class="text">
-        J'adore les concombres en vrai c'est pas genre giga bon de fou nan ? Et
-        sinon j'adore manger du cochon avec des pates à la crême
+      <p class="text" id="animatedText">
+        Ah, te voilà ! Je suis Isaïe, le prophète..
       </p>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const textElement = document.getElementById("animatedText");
+        const bulleContainer = document.querySelector(".bulle-container");
+        const texts = [
+          " Un séraphin apparaît pour purifier mes lèvres avec une braise ardente, afin que je sois digne de transmettre la parole divine. ",
+          "Mais quelque chose semble manquer… Peux-tu m'aider à trouver ce qui manque  ?",
+        ];
+        let index = 0;
+        let clickCount = 0;
+
+        function typeWriter(newText, callback) {
+          textElement.innerText = ""; // Efface le texte actuel
+          let charIndex = 0;
+
+          function type() {
+            if (charIndex < newText.length) {
+              textElement.innerHTML += newText.charAt(charIndex);
+              charIndex++;
+              setTimeout(type, 20);
+            } else if (callback) {
+              callback(); // Appelle la fonction de rappel après l'animation
+            }
+          }
+          type();
+        }
+
+        bulleContainer.addEventListener("click", function () {
+          if (clickCount === 0) {
+            // Afficher le nouveau texte
+            typeWriter(texts[0]);
+            clickCount++;
+          } else if (clickCount === 1) {
+            // Afficher le deuxième texte
+            typeWriter(texts[1]);
+            clickCount++;
+          } else if (clickCount === 2) {
+            // Rediriger après un clic supplémentaire
+            window.location.href = "jeu1.html";
+          }
+        });
+
+        // Animation initiale
+        const initialText = textElement.innerText;
+        typeWriter(initialText);
+      });
+    </script>
   </body>
 </html>
