@@ -1,0 +1,22 @@
+.containergame {
+  background-color: #903421;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  overflow-y: scroll;
+}
+
+.fullscreen {
+  width: 800px;
+  height: 2000px;
+}
+
+.overlay {
+  position: absolute;
+  top: 1020px;
+  left: 700px;
+  width: 100px;
+  height: 380px;
+  background-color: #903421;
+}

@@ -19,15 +19,6 @@ body {
   overflow: hidden;
 }
 
-.containergame {
-  background-color: #903421;
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  margin: 0;
-  overflow:auto;
-}
-
 /*
 HOME
 */
@@ -104,7 +95,7 @@ GO TO PAINTING 1
   z-index: 10;
 }
 
-.painting1_text{
+.painting1_text {
   font-family: ParagraphFont;
   font-size: 18px;
   color: #fff;
@@ -118,7 +109,7 @@ GO TO PAINTING 1
   text-align: center;
 }
 
-.plan1{
+.plan1 {
   position: absolute;
   top: 70%;
   left: 50%;
@@ -129,7 +120,7 @@ GO TO PAINTING 1
   z-index: 10;
 }
 
-.button1{
+.button1 {
   position: absolute;
   top: 90%;
   left: 50%;
@@ -152,7 +143,7 @@ GO TO PAINTING 2
   z-index: 10;
 }
 
-.plan2{
+.plan2 {
   position: absolute;
   top: 70%;
   left: 50%;

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../styles/button.css" />
     <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="stylesheet" href="../styles/typo.css" />
+    <link rel="stylesheet" href="../styles/game.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <title>Gaming 1</title>
     <link rel="icon" href="../images/flavicon.svg" type="image/x-icon" />
@@ -22,12 +23,18 @@
   </head>
   <body>
     <section class="containergame">
-        <img
-          class="painting1"
-          src="../images/tableau1_manquant.jpg"
-          alt="Tableau 1"
-        />
-        <img class="fullscreen" src="../images/tableau1_manquant.jpg" alt="Image Tableau Les Lèvres d'Isaïe purifiées par le feu" />
+      <div class="overlay" onclick="handleClick()"></div>
+      <img
+        class="fullscreen"
+        src="../images/tableau1_manquant.jpg"
+        alt="Image Tableau Les Lèvres d'Isaïe purifiées par le feu"
+      />
     </section>
+
+    <script>
+      function handleClick() {
+        alert("Lucas tu as réussi à cliqué sur l'item manquant");
+      }
+    </script>
   </body>
 </html>
