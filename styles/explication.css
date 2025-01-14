@@ -1,6 +1,6 @@
 .bulle {
   position: absolute;
-  top: 85%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
@@ -13,7 +13,7 @@
   font-family: ParagraphFont;
   font-size: 16px;
   position: absolute;
-  top: 85%;
+  top: 78%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
@@ -24,7 +24,7 @@
 
 .perso {
   position: absolute;
-  top: 62%;
+  top: 53%;
   left: 75%;
   transform: translate(-50%, -50%);
   width: 30%;
