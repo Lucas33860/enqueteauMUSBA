@@ -74,3 +74,30 @@ Game 3
   height: 10vh;
   background-color: transparent;
 }
+
+/*
+Game 4
+*/
+
+.containergame4 {
+  background-color: #903421;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow-y: scroll;
+}
+
+.fullscreen4 {
+  width: 1700px;
+  height: 1200px;
+}
+
+.overlay4 {
+  position: absolute;
+  top: 75vh;
+  left: 210vw;
+  width: 30vw;
+  height: 30vh;
+  background-color: transparent;
+}
