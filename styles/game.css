@@ -41,11 +41,11 @@ Game 2
 
 .overlay2 {
   position: absolute;
-  top: 145vh;
+  top: 135vh;
   left: 75vw;
   width: 25vw;
   height: 30vh;
-  background-color: transparent;
+  background-color: #903421;
 }
 
 /*
