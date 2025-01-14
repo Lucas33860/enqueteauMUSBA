@@ -24,13 +24,17 @@
   </head>
   <body>
     <section class="containerdialog">
-    <div class="bulle-container">
-      <img class="perso" src="../images/Personnage.png" alt="" />
-      <img class="bulle" src="../images/BulleDroite.svg" alt="Bulle de texte" />
-      <p class="text" id="animatedText">
-        Ah, te voilà ! Je suis Isaïe, le prophète..
-      </p>
-    </div>
+      <div class="bulle-container">
+        <img class="perso" src="../images/Personnage.png" alt="" />
+        <img
+          class="bulle"
+          src="../images/BulleDroite.svg"
+          alt="Bulle de texte"
+        />
+        <p class="text" id="animatedText">
+          Ah, te voilà ! Je suis Isaïe, le prophète..
+        </p>
+      </div>
     </section>
 
     <script>
@@ -45,16 +49,20 @@
         let clickCount = 0;
 
         function typeWriter(newText, callback) {
-          textElement.innerText = ""; // Efface le texte actuel
+          textElement.innerText = "";
           let charIndex = 0;
+          bulleContainer.style.pointerEvents = "none";
 
           function type() {
             if (charIndex < newText.length) {
               textElement.innerHTML += newText.charAt(charIndex);
               charIndex++;
               setTimeout(type, 20);
-            } else if (callback) {
-              callback(); // Appelle la fonction de rappel après l'animation
+            } else {
+              bulleContainer.style.pointerEvents = "auto";
+              if (callback) {
+                callback(); //
+              }
             }
           }
           type();
@@ -62,20 +70,16 @@
 
         bulleContainer.addEventListener("click", function () {
           if (clickCount === 0) {
-            // Afficher le nouveau texte
             typeWriter(texts[0]);
             clickCount++;
           } else if (clickCount === 1) {
-            // Afficher le deuxième texte
             typeWriter(texts[1]);
             clickCount++;
           } else if (clickCount === 2) {
-            // Rediriger après un clic supplémentaire
             window.location.href = "jeu1.html";
           }
         });
 
-        // Animation initiale
         const initialText = textElement.innerText;
         typeWriter(initialText);
       });
