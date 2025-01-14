@@ -220,7 +220,7 @@ GO TO PAINTING 4
 
 .plan4 {
   position: absolute;
-  top: 68%;
+  top: 66%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 600px;
