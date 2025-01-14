@@ -27,3 +27,15 @@ button direction tableau 1
   transform: translate(-50%, -50%);
   z-index: 10;
 }
+
+/*
+button direction tableau 3 
+*/
+
+.button3 {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
