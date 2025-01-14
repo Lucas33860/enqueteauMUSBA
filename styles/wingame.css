@@ -35,8 +35,34 @@
 
 .perso {
   position: absolute;
-  top: 55%;
-  left: 73%;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  max-width: 600px;
+  height: auto;
+  z-index: 10;
+}
+
+.text2win {
+  font-family: ParagraphFont;
+  font-size: 16px;
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  max-width: 600px;
+  height: auto;
+  z-index: 10;
+}
+
+.text3win {
+  font-family: ParagraphFont;
+  font-size: 16px;
+  position: absolute;
+  top: 78%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
   max-width: 600px;
