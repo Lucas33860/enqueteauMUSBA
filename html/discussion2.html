@@ -42,9 +42,9 @@
         const textElement = document.getElementById("animatedText");
         const bulleContainer = document.querySelector(".bulle-container");
         const texts = [
-          "Me voici brillamment représenté dans ce tableau. ",
           "Mais voilà, un petit hic me perturbe... Je n’ai plus ma classe habituelle !",
-          "Aide-moi à retrouver ce qui me manque dans mon tableau ! Je te fais confiance !",
+          "Regarde bien autour de toi et aide-moi à remettre tout çela en ordre.",
+          "Je te fais confiance !"
         ];
         let index = 0;
         let clickCount = 0;
@@ -52,14 +52,18 @@
         function typeWriter(newText, callback) {
           textElement.innerText = "";
           let charIndex = 0;
+          bulleContainer.style.pointerEvents = "none";
 
           function type() {
             if (charIndex < newText.length) {
               textElement.innerHTML += newText.charAt(charIndex);
               charIndex++;
               setTimeout(type, 20);
-            } else if (callback) {
-              callback();
+            } else {
+              bulleContainer.style.pointerEvents = "auto";
+              if (callback) {
+                callback(); //
+              }
             }
           }
           type();
@@ -84,7 +88,6 @@
           }
         });
 
-        // Animation initiale
         const initialText = textElement.innerText;
         typeWriter(initialText);
       });
