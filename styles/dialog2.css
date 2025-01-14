@@ -1,17 +1,6 @@
-.containerdialog {
-  background-image: url("../images/discpainting1.png");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-  overflow: hidden;
-}
-
 .bulle {
   position: absolute;
-  top: 75%;
+  top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
@@ -23,7 +12,7 @@
   font-family: ParagraphFont;
   font-size: 16px;
   position: absolute;
-  top: 78%;
+  top: 88%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
@@ -34,7 +23,7 @@
 
 .perso {
   position: absolute;
-  top: 53%;
+  top: 62%;
   left: 75%;
   transform: translate(-50%, -50%);
   width: 30%;
@@ -42,7 +31,3 @@
   height: auto;
   z-index: 10;
 }
-
-/*
-DIALOG 2 
-*/
