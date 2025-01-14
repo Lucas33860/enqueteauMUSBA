@@ -18,7 +18,7 @@
   left: 700px;
   width: 100px;
   height: 380px;
-  background-color: #903421;
+  background-color: transparent;
 }
 
 /*
@@ -45,7 +45,7 @@ Game 2
   left: 85vw;
   width: 15vw;
   height: 30vh;
-  background-color: #903421;
+  background-color: transparent;
 }
 
 /*
@@ -72,5 +72,5 @@ Game 3
   left: 15vw;
   width: 30vw;
   height: 10vh;
-  background-color: #903421;
+  background-color: transparent;
 }
