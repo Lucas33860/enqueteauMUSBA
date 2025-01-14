@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="../styles/typo.css" />
     <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="stylesheet" href="../styles/button.css" />
+    <link rel="stylesheet" href="../styles/wingame.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <title>Enquête au Musba</title>
+    <title>Tu as gagné</title>
     <link rel="icon" href="../images/flavicon.svg" type="image/x-icon" />
     <meta
       name="description"
@@ -21,8 +22,46 @@
     />
   </head>
   <body>
-    <section class="container">
-      <div></div>
+    <section class="containerwingame">
+      <div>
+        <img class="perso" src="../images/Personnage.png" alt="" />
+        <img
+          class="bulle"
+          src="../images/BulleDroite.svg"
+          alt="Bulle de texte"
+        />
+        <p class="text" id="animatedText">
+          Merci j’ai retrouvé mon parchemin !
+        </p>
+      </div>
     </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const textElement = document.getElementById("animatedText");
+
+        function typeWriter(newText, callback) {
+          textElement.innerText = "";
+          let charIndex = 0;
+
+          function type() {
+            if (charIndex < newText.length) {
+              textElement.innerHTML += newText.charAt(charIndex);
+              charIndex++;
+              setTimeout(type, 20);
+            } else if (callback) {
+              callback();
+            }
+          }
+          type();
+        }
+        const initialText = textElement.innerText;
+        typeWriter(initialText, function () {
+          const bulleElement = document.querySelector(".bulle");
+          bulleElement.addEventListener("click", function () {
+            window.location.href = "dirtableau2.html";
+          });
+        });
+      });
+    </script>
   </body>
 </html>
