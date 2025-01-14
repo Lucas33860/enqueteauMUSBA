@@ -42,7 +42,7 @@
         const bulleContainer = document.querySelector(".bulle-container");
         const texts = [
           "Avec l’âge et l’expérience, j’ai accumulé tant de conseils et de souvenirs… ",
-          "Aide-moi à le retrouver ce qui à disparu je t’en prie !",
+          "Aide-moi à retrouver ce qui à disparu je t’en prie !",
         ];
         let index = 0;
         let clickCount = 0;
@@ -78,12 +78,8 @@
             clickCount++;
           } else if (clickCount === 2) {
             // Afficher le troisième texte
-            typeWriter(texts[2]);
-            clickCount++;
-          } else if (clickCount === 3) {
-            // Rediriger après un clic supplémentaire
             window.location.href = "jeu3.html";
-          }
+          } 
         });
 
         const initialText = textElement.innerText;
