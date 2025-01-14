@@ -47,3 +47,30 @@ Game 2
   height: 30vh;
   background-color: #903421;
 }
+
+/*
+Game 3
+*/
+
+.containergame3 {
+  background-color: #903421;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow-y: scroll;
+}
+
+.fullscreen3 {
+  width: 1500px;
+  height: 1200px;
+}
+
+.overlay3 {
+  position: absolute;
+  top: 105vh;
+  left: 15vw;
+  width: 30vw;
+  height: 10vh;
+  background-color: #903421;
+}
