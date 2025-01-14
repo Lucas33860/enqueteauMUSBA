@@ -1,13 +1,3 @@
-.containerdialog {
-  background-image: url("../images/discpainting1.png");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  margin: 0;
-}
-
 .bulle {
   position: absolute;
   top: 85%;
@@ -48,5 +38,5 @@
   top: 93%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 30; /* Assurez-vous que le z-index est supérieur à celui de .bulle, .text et .button */
+  z-index: 30;
 }
