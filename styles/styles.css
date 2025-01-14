@@ -6,13 +6,14 @@ html,
 body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .container {
   background-color: #903421;
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   overflow: hidden;
 }
 
