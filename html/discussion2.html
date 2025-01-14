@@ -42,9 +42,8 @@
         const textElement = document.getElementById("animatedText");
         const bulleContainer = document.querySelector(".bulle-container");
         const texts = [
-          "Me voici brillamment représenté dans ce tableau. ",
-          "Mais voilà, un petit hic me perturbe... Je n’ai plus ma classe habituelle !",
-          "Aide-moi à retrouver ce qui me manque dans mon tableau ! Je te fais confiance !",
+          " Un séraphin apparaît pour purifier mes lèvres avec une braise ardente, afin que je sois digne de transmettre la parole divine. ",
+          "Mais quelque chose semble manquer… Peux-tu m'aider à trouver ce qui manque  ?",
         ];
         let index = 0;
         let clickCount = 0;
@@ -52,14 +51,18 @@
         function typeWriter(newText, callback) {
           textElement.innerText = "";
           let charIndex = 0;
+          bulleContainer.style.pointerEvents = "none";
 
           function type() {
             if (charIndex < newText.length) {
               textElement.innerHTML += newText.charAt(charIndex);
               charIndex++;
               setTimeout(type, 20);
-            } else if (callback) {
-              callback();
+            } else {
+              bulleContainer.style.pointerEvents = "auto";
+              if (callback) {
+                callback(); //
+              }
             }
           }
           type();
@@ -67,24 +70,16 @@
 
         bulleContainer.addEventListener("click", function () {
           if (clickCount === 0) {
-            // Afficher le nouveau texte
             typeWriter(texts[0]);
             clickCount++;
           } else if (clickCount === 1) {
-            // Afficher le deuxième texte
             typeWriter(texts[1]);
             clickCount++;
           } else if (clickCount === 2) {
-            // Afficher le troisième texte
-            typeWriter(texts[2]);
-            clickCount++;
-          } else if (clickCount === 3) {
-            // Rediriger après un clic supplémentaire
             window.location.href = "jeu1.html";
           }
         });
 
-        // Animation initiale
         const initialText = textElement.innerText;
         typeWriter(initialText);
       });
