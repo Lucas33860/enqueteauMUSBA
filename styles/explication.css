@@ -13,7 +13,7 @@
   font-family: ParagraphFont;
   font-size: 16px;
   position: absolute;
-  top: 78%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
@@ -35,7 +35,7 @@
 
 .buttondacc {
   position: absolute;
-  top: 93%;
+  top: 82%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 30;
