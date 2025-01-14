@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/fonts.css" />
+    <link rel="stylesheet" href="../styles/typo.css" />
+    <link rel="stylesheet" href="../styles/button.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/dialog.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <title>Discussion Tableau 3</title>
+    <link rel="icon" href="../images/flavicon.svg" type="image/x-icon" />
+    <meta
+      name="description"
+      content="Discussion"
+    />
+    <meta
+      name="keywords"
+      content="enquête, Musba, mystère, jeu, indices, Bacchanight, 2025, Richard Robinson, archevêque, Armagh, baron, Rokeby, primat, Irlande"
+    />
+  </head>
+  <body>
+    <section class="containerdialog3">
+      <div class="bulle-container">
+        <img class="perso2" src="../images/perso_servante.png" alt="" />
+        <img
+          class="bulle"
+          src="../images/bulle_servante.svg"
+          alt="Bulle de texte"
+        />
+        <p class="text" id="animatedText">
+          Approche !Je suis la vieille servante que tu vois ici, je donne mes précieux conseils à la jeune femme à mes côtés.  
+        </p>
+      </div>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const textElement = document.getElementById("animatedText");
+        const bulleContainer = document.querySelector(".bulle-container");
+        const texts = [
+          "Avec l’âge et l’expérience, j’ai accumulé tant de conseils et de souvenirs… ",
+          "Aide-moi à le retrouver ce qui à disparu je t’en prie !",
+        ];
+        let index = 0;
+        let clickCount = 0;
+
+        function typeWriter(newText, callback) {
+          textElement.innerText = "";
+          let charIndex = 0;
+          bulleContainer.style.pointerEvents = "none";
+
+          function type() {
+            if (charIndex < newText.length) {
+              textElement.innerHTML += newText.charAt(charIndex);
+              charIndex++;
+              setTimeout(type, 20);
+            } else {
+              bulleContainer.style.pointerEvents = "auto";
+              if (callback) {
+                callback(); //
+              }
+            }
+          }
+          type();
+        }
+
+        bulleContainer.addEventListener("click", function () {
+          if (clickCount === 0) {
+            // Afficher le nouveau texte
+            typeWriter(texts[0]);
+            clickCount++;
+          } else if (clickCount === 1) {
+            // Afficher le deuxième texte
+            typeWriter(texts[1]);
+            clickCount++;
+          } else if (clickCount === 2) {
+            // Afficher le troisième texte
+            typeWriter(texts[2]);
+            clickCount++;
+          } else if (clickCount === 3) {
+            // Rediriger après un clic supplémentaire
+            window.location.href = "jeu3.html";
+          }
+        });
+
+        const initialText = textElement.innerText;
+        typeWriter(initialText);
+      });
+    </script>
+  </body>
+</html>
