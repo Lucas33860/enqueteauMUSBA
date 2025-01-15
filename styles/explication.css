@@ -10,7 +10,7 @@
 
 .bulle {
   position: absolute;
-  top: 75%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
@@ -23,7 +23,7 @@
   font-family: ParagraphFont;
   font-size: 16px;
   position: absolute;
-  top: 75%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
@@ -34,8 +34,8 @@
 
 .perso_explication {
   position: absolute;
-  top: 53%;
-  left: 75%;
+  top: 60%;
+  left: 70%;
   transform: translate(-50%, -50%);
   width: 50%;
   max-width: 600px;
@@ -45,7 +45,7 @@
 
 .buttondacc {
   position: absolute;
-  top: 83%;
+  top: 88%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 30;
