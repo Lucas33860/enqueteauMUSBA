@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/reset.css" />
-    <link rel="stylesheet" href="../styles/dialog.css">
+    <link rel="stylesheet" href="../styles/dialog.css" />
     <link rel="stylesheet" href="../styles/fonts.css" />
     <link rel="stylesheet" href="../styles/typo.css" />
     <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="stylesheet" href="../styles/button.css" />
     <link rel="stylesheet" href="../styles/wingame.css" />
- 
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <title>Tu as gagné</title>
     <link rel="icon" href="../images/flavicon.svg" type="image/x-icon" />
@@ -26,14 +26,19 @@
   <body>
     <section class="containerwingame1">
       <div class="bulle-container">
-        <img class="perso1" src="../images/perso_isaie.png" alt="Personnage dessiné illustrant Isaïe" />
+        <img
+          class="perso1"
+          src="../images/perso_isaie.png"
+          alt="Personnage dessiné illustrant Isaïe"
+        />
         <img
           class="bulle"
           src="../images/bulle_isaie.svg"
           alt="Bulle de texte"
         />
         <p class="text" id="animatedText">
-          Merci d'avoir retrouvé mon parchemin avec les saintes écritures. Me voilà apte à transmettre la parole divine. 
+          Merci d'avoir retrouvé mon parchemin avec les saintes écritures. Me
+          voilà apte à transmettre la parole divine.
         </p>
       </div>
     </section>
@@ -60,7 +65,7 @@
             } else {
               bulleContainer.style.pointerEvents = "auto";
               if (callback) {
-                callback(); //
+                callback();
               }
             }
           }
@@ -72,7 +77,8 @@
             typeWriter(texts[0]);
             clickCount++;
           } else if (clickCount === 1) {
-            window.location.href = "jeu1.html";
+            window.location.href = "introperso2.html";
+          }
         });
 
         const initialText = textElement.innerText;
