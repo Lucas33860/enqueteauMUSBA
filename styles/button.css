@@ -51,3 +51,19 @@ button direction tableau 3
   transform: translate(-50%, -50%);
   z-index: 10;
 }
+
+.button_home {
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.button_credits {
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
