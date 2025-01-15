@@ -227,3 +227,15 @@ GO TO PAINTING 4
   height: auto;
   z-index: 10;
 }
+
+/*
+end game 
+*/
+
+h1{
+  text-align: center;
+}
+
+.textemerci{
+  top: 20%;
+}
