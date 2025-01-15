@@ -105,7 +105,7 @@ DIALOG 4
 
 .perso4 {
   position: absolute;
-  top: 53%;
+  top: 50%;
   left: 67%;
   transform: translate(-50%, -50%);
   width: 70%;
