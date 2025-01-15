@@ -1,0 +1,137 @@
+.containerintroperso1 {
+  background-image: url("../images/background_museum.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.containerwingame2 {
+  background-image: url("../images/background_richard_robinson.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.containerwingame3 {
+  background-image: url("../images/background_tableau3_flouté.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.containerwingame4 {
+  background-image: url("../images/background_venus.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.bulle {
+  position: absolute;
+  top: 72%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  z-index: 10;
+}
+
+.text {
+  font-family: ParagraphFont;
+  font-size: 16px;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  max-width: 600px;
+  height: auto;
+  z-index: 10;
+}
+
+.persointro1 {
+  position: absolute;
+  top: 53%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  max-width: 600px;
+  height: auto;
+  z-index: 10;
+}
+
+.perso2 {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  max-width: 600px;
+  height: auto;
+  z-index: 10;
+}
+
+.perso3 {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  max-width: 600px;
+  height: auto;
+  z-index: 10;
+}
+
+.perso4 {
+  position: absolute;
+  top: 53%;
+  left: 67%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  max-width: 600px;
+  height: auto;
+  z-index: 10;
+}
+
+.text2win {
+  font-family: ParagraphFont;
+  font-size: 16px;
+  position: absolute;
+  top: 73%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  max-width: 600px;
+  height: auto;
+  z-index: 10;
+}
+
+.text3win {
+  font-family: ParagraphFont;
+  font-size: 16px;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  max-width: 600px;
+  height: auto;
+  z-index: 10;
+}
