@@ -68,11 +68,11 @@ Game 3
 
 .overlay3 {
   position: absolute;
-  top: 93vh;
-  left: 3vw;
-  width: 10vw;
+  top: 103vh;
+  left: 10vw;
+  width: 30vw;
   height: 10vh;
-  background-color: transparent;
+  background-color: #903421;
 }
 
 /*

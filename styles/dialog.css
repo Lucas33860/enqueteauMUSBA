@@ -94,3 +94,29 @@ DIALOG 3
   height: auto;
   z-index: 10;
 }
+
+/*
+DIALOG 3
+*/
+
+.containerdialog3 {
+  background-image: url("../images/background_venus.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.perso3 {
+  position: absolute;
+  top: 55%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  max-width: 600px;
+  height: auto;
+  z-index: 10;
+}
