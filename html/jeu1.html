@@ -26,6 +26,7 @@
       <div class="overlay" onclick="handleClick()"></div>
       <img
         class="fullscreen"
+        onclick="help()"
         src="../images/tableau1_manquant.jpg"
         alt="Image Tableau Les Lèvres d'Isaïe purifiées par le feu"
       />
@@ -34,6 +35,10 @@
     <script>
       function handleClick() {
         location.href = "wingame1.html";
+      }
+
+      function help() {
+        alert("Cherchez bien l'image, n'hésitez pas à scroller dans l'image");
       }
     </script>
   </body>
