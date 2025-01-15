@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/dialog.css">
     <link rel="stylesheet" href="../styles/fonts.css" />
     <link rel="stylesheet" href="../styles/typo.css" />
     <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="stylesheet" href="../styles/button.css" />
     <link rel="stylesheet" href="../styles/wingame.css" />
+ 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <title>Tu as gagné</title>
     <link rel="icon" href="../images/flavicon.svg" type="image/x-icon" />
@@ -23,7 +25,7 @@
   </head>
   <body>
     <section class="containerwingame1">
-      <div>
+      <div class="bulle-container">
         <img class="perso1" src="../images/perso_isaie.png" alt="Personnage dessiné illustrant Isaïe" />
         <img
           class="bulle"
@@ -31,36 +33,50 @@
           alt="Bulle de texte"
         />
         <p class="text" id="animatedText">
-          Merci d'avoir retrouvé mon parchemin avec les saintes écritures. Me voilà apte à transmettre la parole divine. Punissez l'esprit malicieux ! 
+          Merci d'avoir retrouvé mon parchemin avec les saintes écritures. Me voilà apte à transmettre la parole divine. 
         </p>
       </div>
     </section>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const textElement = document.getElementById("animatedText");
+        const bulleContainer = document.querySelector(".bulle-container");
+        const texts = [
+          "Regarde par là-bas. L'esprit est parti voler Richard Robinson ! Va l'aider.",
+        ];
+        let index = 0;
+        let clickCount = 0;
 
         function typeWriter(newText, callback) {
           textElement.innerText = "";
           let charIndex = 0;
+          bulleContainer.style.pointerEvents = "none";
 
           function type() {
             if (charIndex < newText.length) {
               textElement.innerHTML += newText.charAt(charIndex);
               charIndex++;
               setTimeout(type, 20);
-            } else if (callback) {
-              callback();
+            } else {
+              bulleContainer.style.pointerEvents = "auto";
+              if (callback) {
+                callback(); //
+              }
             }
           }
           type();
         }
-        const initialText = textElement.innerText;
-        typeWriter(initialText, function () {
-          const bulleElement = document.querySelector(".bulle");
-          bulleElement.addEventListener("click", function () {
-            window.location.href = "introperso2.html";
-          });
+
+        bulleContainer.addEventListener("click", function () {
+          if (clickCount === 0) {
+            typeWriter(texts[0]);
+            clickCount++;
+          } else if (clickCount === 1) {
+            window.location.href = "jeu1.html";
         });
+
+        const initialText = textElement.innerText;
+        typeWriter(initialText);
       });
     </script>
   </body>
