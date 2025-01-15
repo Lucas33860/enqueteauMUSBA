@@ -41,10 +41,10 @@ Game 2
 
 .overlay2 {
   position: absolute;
-  top: 135vh;
-  left: 75vw;
-  width: 25vw;
-  height: 30vh;
+  top: 1000px;
+  left: 300px;
+  width: 50px;
+  height: 180px;
   background-color: transparent;
 }
 
@@ -68,11 +68,11 @@ Game 3
 
 .overlay3 {
   position: absolute;
-  top: 103vh;
-  left: 10vw;
-  width: 30vw;
-  height: 10vh;
-  background-color: #903421;
+  top: 700px;
+  left: 40px;
+  width: 120px;
+  height: 70px;
+  background-color: transparent;
 }
 
 /*
@@ -95,9 +95,9 @@ Game 4
 
 .overlay4 {
   position: absolute;
-  top: 70vh;
-  left: 210vw;
-  width: 50vw;
-  height: 30vh;
+  top: 450px;
+  left: 830px;
+  width: 150px;
+  height: 150px;
   background-color: transparent;
 }
