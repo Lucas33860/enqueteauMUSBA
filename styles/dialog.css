@@ -103,6 +103,17 @@ DIALOG 3
 DIALOG 4 
 */
 
+.containerdialog4 {
+  background-image: url("../images/background_venus.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
 .perso4 {
   position: absolute;
   top: 50%;
