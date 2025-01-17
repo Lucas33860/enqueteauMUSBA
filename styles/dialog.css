@@ -21,6 +21,7 @@
 }
 .text {
   font-family: ParagraphFont;
+  color: black !important;
   font-size: 16px;
   position: absolute;
   top: 78%;
