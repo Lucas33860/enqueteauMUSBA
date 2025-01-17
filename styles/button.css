@@ -34,7 +34,7 @@ button direction tableau 2
 
 .button2 {
   position: absolute;
-  top: 82%;
+  top: 83%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
@@ -46,7 +46,20 @@ button direction tableau 3
 
 .button3 {
   position: absolute;
-  top: 87%;
+  top: 83%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+
+/*
+button direction tableau 4 
+*/
+
+.button4 {
+  position: absolute;
+  top: 83%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
