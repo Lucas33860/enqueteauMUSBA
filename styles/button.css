@@ -67,7 +67,7 @@ button direction tableau 4
 
 .button_home {
   position: absolute;
-  top: 88%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
@@ -75,7 +75,7 @@ button direction tableau 4
 
 .button_credits {
   position: absolute;
-  top: 78%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
