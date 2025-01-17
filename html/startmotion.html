@@ -19,17 +19,62 @@
     />
   </head>
   <body>
-    <section
-      class="container"
-      style="width: 100vw; height: 100vh; overflow: hidden"
-    >
+    <section class="container">
       <video
         src="../videos/startmotion.mp4"
         style="width: 100vw; height: 100vh; object-fit: cover"
         autoplay
         playsinline
         onended="window.location.href='explication.html'"
+        autoplay
+        playsinline
+        muted
       ></video>
-    </section>
   </body>
 </html>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const loader = document.createElement("div");
+    loader.classList.add("loader");
+    document.body.appendChild(loader);
+
+    const video = document.querySelector("video");
+    video.style.display = "none";
+
+    video.addEventListener("canplay", function () {
+      loader.style.display = "none";
+      video.style.display = "block";
+      video.play();
+    });
+
+    setTimeout(function () {
+      if (video.readyState < 3) {
+        loader.style.display = "block";
+      }
+    }, 100);
+  });
+</script>
+
+<style>
+  .loader {
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #3498db;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    display: none;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+</style>
