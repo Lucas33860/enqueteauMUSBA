@@ -34,7 +34,7 @@ button direction tableau 2
 
 .button2 {
   position: absolute;
-  top: 89%;
+  top: 82%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
