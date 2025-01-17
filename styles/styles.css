@@ -85,7 +85,7 @@ GO TO PAINTING 1
 
 .painting1 {
   position: absolute;
-  top: 31%;
+  top: 34%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 27%;
@@ -110,7 +110,7 @@ GO TO PAINTING 1
 
 .plan1 {
   position: absolute;
-  top: 66%;
+  top: 71%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 45%;
