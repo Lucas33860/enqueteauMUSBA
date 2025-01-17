@@ -21,6 +21,18 @@
   background-color: transparent;
 }
 
+.banner {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: #903421;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  z-index: 1000;
+}
+
 /*
 Game 2
 */
