@@ -28,5 +28,5 @@ h3 {
 
 p {
   font-size: 16px;
-  color: black;
+  color: black !important;
 }

@@ -1,9 +1,9 @@
 .logo_endgame {
     position: absolute;
-    top: 43%;
+    top: 39%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 75%;
+    width: 65%;
     max-width: 600px;
     height: auto;
     z-index: 10;
@@ -11,10 +11,10 @@
 
 .cadre {
     position: absolute;
-    top: 17%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
+    width: 80%;
     max-width: 600px;
     height: auto;
     z-index: 10;
@@ -25,7 +25,7 @@
     font-size: 30px;
     color: #fff;
     position: absolute;
-    top: 60%;
+    top: 54%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: auto;
@@ -39,7 +39,7 @@
     font-size: 20px;
     color: #fff;
     position: absolute;
-    top: 68%;
+    top: 61%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: auto;

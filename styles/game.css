@@ -21,6 +21,19 @@
   background-color: transparent;
 }
 
+.banner {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: #903421;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  z-index: 1000;
+  font-family: ParagraphFont;
+}
+
 /*
 Game 2
 */
@@ -41,10 +54,10 @@ Game 2
 
 .overlay2 {
   position: absolute;
-  top: 1000px;
-  left: 300px;
-  width: 50px;
-  height: 180px;
+  top: 500px;
+  left: 450px;
+  width: 70px;
+  height: 130px;
   background-color: transparent;
 }
 

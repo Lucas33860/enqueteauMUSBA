@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <title>Motion de Fin</title>
     <link rel="icon" href="../images/flavicon.svg" type="image/x-icon" />
-    <meta name="description" content="Motion Design de fin  " />
+    <meta name="description" content="Motion Design de fin" />
     <meta
       name="keywords"
       content="enquête, Musba, mystère, jeu, indices, Bacchanight, dirigez, tableau, 2, Richard Robinson, archevêque, Armagh, baron, Rokeby, primat, Irlande"
@@ -28,8 +28,31 @@
         style="width: 100vw; height: 100vh; object-fit: cover"
         autoplay
         playsinline
+        muted
         onended="window.location.href='endgame.html'"
       ></video>
     </section>
   </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const loader = document.createElement("div");
+      loader.classList.add("loader");
+      document.body.appendChild(loader);
+
+      const video = document.querySelector("video");
+      video.style.display = "none";
+
+      video.addEventListener("canplay", function () {
+        loader.style.display = "none";
+        video.style.display = "block";
+        video.play();
+      });
+
+      setTimeout(function () {
+        if (video.readyState < 3) {
+          loader.style.display = "block";
+        }
+      }, 100);
+    });
+  </script>
 </html>

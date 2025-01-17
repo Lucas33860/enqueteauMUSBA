@@ -22,11 +22,13 @@
     />
   </head>
   <body>
+    <div class="banner">
+      Déplacez-vous dans l'oeuvre et cliquez ou se trouve l'objet manquant
+    </div>
     <section class="containergame">
       <div class="overlay" onclick="handleClick()"></div>
       <img
         class="fullscreen"
-        onclick="help()"
         src="../images/tableau1_manquant.jpg"
         alt="Image Tableau Les Lèvres d'Isaïe purifiées par le feu"
       />
@@ -35,10 +37,6 @@
     <script>
       function handleClick() {
         location.href = "wingame1.html";
-      }
-
-      function help() {
-        alert("Cherchez bien, n'hésitez pas à scroller dans l'image");
       }
     </script>
   </body>
